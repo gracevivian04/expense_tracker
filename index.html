@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+         <h2>Expense Tracker</h2>
+        <h4>Your Savings on:</h4>
+        <p id="date"></p>
+        <h1 id="savings">€0.00</h1>
+        <div>
+        <div class="income-expense">
+            <div class="ingoings">
+            <h4>Ingoings</h4>
+            <p id="incomeTotal" class="incomeTotal">+€0.00</p>
+            </div>
+            <div class="outgoings">
+            <h4>Outgoings</h4>
+            <p id="expenseTotal" class="expenseTotal">-€0.00</p>
+            </div>
+        </div>
+        </div>
+        <h3>Add new transaction</h3>
+        <p id="error-message"></p>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input type="text" id="description" placeholder="Enter text..." />
+            </div>
+             <div class="form-control">
+                 <label for="amount">Amount (- / +)</label>
+             <input type="number" id="amount" placeholder="Enter amount..." />
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+        <div class="transactionHistory">
+        <h3>Transaction History</h3>
+        <ul id="list" class="list">
+    
+        </ul>
+        <div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
